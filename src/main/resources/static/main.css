@@ -1,0 +1,69 @@
+*{margin:0px; padding: 0px;box-sizing: border-box;}
+html,body{height: 100%; width: 100%; margin:0px;padding: 0px;font-family: sans-serif;}
+/* navbar */
+#header{position:sticky;top: 0px;left: 0px;z-index: 10;box-shadow: 0px 5px 10px rgba(0,0,0,0.2); height:15%;width:100%;display:flex;justify-content: space-between;align-items: center;background: #e3e6f3; margin:0px 0px;}
+.section{padding:2% 5%;}
+.logocontainer{position: relative;height: 100%;margin-left: 2%;}
+.logocontainer img{height: 100%; width: 100%;}
+.navigationcontainerCls{width: 60%;}
+.navigationcontainerCls ul {display: flex;justify-content: center;}
+.navigationcontainerCls li{list-style: none;padding:0px 3%;}
+.navigationcontainerCls li a {text-decoration: none;font-size: 16px;font-family: cursive;font-weight: 600;transition: 0.5s ease;}
+.navigationcontainerCls li a:hover{color: #088178;}
+.navigationcontainerCls li a.active{color: #088178;border-bottom: 4px solid #088178;}
+
+/* Home page */
+#hero{background-image: url('images/shoppinggirl.png');height:85%;width: 100%;display: flex;flex-direction: column;justify-content: center;align-items:flex-start;background-size: contain;background-repeat: no-repeat;background-position: top right;padding:0 10%;}
+#hero h4{padding-bottom:1%}
+#hero h2{padding-bottom:1%;}
+#hero h1{padding-bottom:1.5%;color:#088178}
+#hero p {padding-bottom:2%;}
+#hero button{background-image: url('images/buttonbackground.png');background-size:cover;background-position:center;color: #088178;font-family: cursive;padding:1% 4%;font-size:15px;cursor: pointer; font-weight: 400px;box-shadow: 10px 10px 20px rgba(0,0,0,0.4);border-radius: 15px;}
+#features{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;}
+#features .featurebox{width:15%;border:1px solid #cce7d0;padding:3% 2%;text-align: center;box-shadow: 20px 20px 34px rgba(0,0,0,0.03);border-radius: 5px;margin:2% 0px;}
+#features .featurebox img{width: 100%;margin-bottom :10%;}
+#features .featurebox h5{background-color:#fddde4;display: inline-block;font-family: cursive;color:#088178;padding: 5% 5%;}
+#features .featurebox:hover{box-shadow:0px 0px 20px 10px rgba(0,0,0,0.3);}
+#features .featurebox:nth-child(2) h5{background-color:#cdebbc;}
+#features .featurebox:nth-child(3) h5{background-color:#d1e8f2;}
+#features .featurebox:nth-child(4) h5{background-color:#cdd4f8;}
+#features .featurebox:nth-child(5) h5{background-color:#f6dbf6;}
+#features .featurebox:nth-child(6) h5{background-color:#fff2e5;}
+.dashboard{width:100%;height:300px;display: flex;justify-content: space-around;align-items: center;background-color:#088178;}
+.chart{height: 90%;width: 30%;background-color:whitesmoke ;display: flex;align-items: center;justify-content: center;} 
+canvas{position:relative;height:100%;width: 100%;}
+/*shop page*/
+#headingCls{position: relative;background-color:#088178;height:10%;text-align: center;line-height:2.5;font-family: Verdana, Geneva, Tahoma, sans-serif;color: #d1e8f2;}
+#products{position: relative;height:80%;width: 100%;background: #cce7d0;padding: 3% 3%;display: flex;justify-content: space-between;align-items:flex-start;}
+.product{position: relative;width: 15%;height:60%;border: 1px solid whitesmoke;padding: 0.5% 0.5%;background-color: white;box-shadow: 0px 10px 15px rgba(0,0,0,0.1);}
+.product:hover{box-shadow: 10px 10px 15px rgba(0,0,0,0.2), -10px -10px 15px rgba(0,0,0,0.2);}
+.imgcontainer{height: 75%;width: 100%;margin-bottom:4%;}
+.imgcontainer img{height: 100%;width: 100%;border-radius: 10px;background-color: #088178;}
+.des{text-align: center;position: relative;background-color: #cce7d0;border-radius: 5px;}
+.des h5{font-family:sans-serif;font-weight:1000;}
+.des span{display:block;font-size: 14px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: left;text-indent: 5px;}
+.des .float{font-size: 20px;color:#088178;background-color:#cce7d0;border-radius: 50%;position: absolute;bottom:0px;right:1%;padding:3%;z-index:5;}
+
+/*contact us*/
+#singup{position: relaive;height: 85%;width: 100%;background-color: #cce7d0;padding: 2% 2%;}
+.inputfield{position: relative;width:50%;height:100%;border: 1px solid #088178;float:left;display: flex;justify-content:space-around;align-items: center;flex-direction: column;}
+.datacontainer{position: relative;display: flex;flex-direction: column;}
+.listcontainer{position:relative;width:50%;height: 100%;border: 1px solid #088178;background-color: #cce7d0;float: left;}
+.listheader{position:relative;height:8%;width:100%;border-bottom:1px solid red;display: flex;align-items: center;justify-content:space-between;padding:0px 1%;}
+.listcontainer label, .datalist label{position:relative;width:20%;text-align: center;overflow:hidden;text-overflow: ellipsis;white-space:nowrap;}
+.datalist{position:relative;height:92%;width:100%;}
+.datacont{position:relative;height: 8%;width: 100%;display: flex;justify-content: space-between;align-items: center;padding: 0% 1%;border-bottom:1px solid whitesmoke;}
+.deleteButtonCls{transform: scale(-1);position:relative;height:25px;width: 25px;background-image: url('images/delete.svg');background-position: center center;background-size: cover;transition: all 0.3s;}
+.deleteButtonCls:hover{width: 30px;height: 30px;}
+
+/*cart*/
+#cart-container{position: relative;height:85%;width:100%;background-color: #cce7d0;padding:2% 2%;}
+.card-item-container{position: relative;height:100%;width:100%;background-color: #cce7d0;display: flex;align-items:flex-start;justify-content:flex-start;flex-wrap: wrap;;}
+.cart-item{position: relative;width: 15%;height:60%;border: 1px solid whitesmoke;padding: 0.5% 0.5%;background-color: white;box-shadow: 0px 10px 15px rgba(0,0,0,0.1);margin-left:2%;}
+.productCls{position: relative;height:85%;width: 100%;}
+.cartCls{position:relative;height: 15%;width:100%;background-color: antiquewhite;}
+.quantityCont{height: 50%;width: 100%;padding:0.5% 0.5%;}
+.subtotalCls{height: 50%;width: 100%;padding:0.5% 0.5%;}
+.labelcls{font-size:14px;width: 50%;height: 50%;}
+.count{width: 50%;height:100%;}
+.subtotal{font-size:14px;}
